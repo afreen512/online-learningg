@@ -21,9 +21,13 @@ app.use(morgan('dev'));
 app.use(bodyParser.json());
 // app.use(cors());
 app.use(cors({ origin: process.env.CLIENT_URL }));
+if (process.env.NODE_ENV=='production'){
+    app.use(express.static('client/build'))
 
+}
 // middlewares
 app.use('/api', authRoutes);
+
 
 const port = process.env.PORT || 8000;
 app.listen(port, () => console.log(`API is running on port ${port}`));
