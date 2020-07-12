@@ -1,0 +1,52 @@
+{
+  "mini-css-extract-plugin node_modules/@zeit/next-css/node_modules/css-loader/index.js??ref--5-1!node_modules/nprogress/nprogress.css": [
+    {
+      "modules": {
+        "byIdentifier": {},
+        "usedIds": {}
+      },
+      "chunks": {
+        "byName": {
+          "mini-css-extract-plugin": 0
+        },
+        "bySource": {},
+        "usedIds": [
+          0
+        ]
+      }
+    }
+  ],
+  "modules": {
+    "byIdentifier": {
+      "css node_modules/@zeit/next-css/node_modules/css-loader/index.js??ref--5-1!node_modules/nprogress/nprogress.css 0": 0
+    },
+    "usedIds": {
+      "0": 0
+    }
+  },
+  "chunks": {
+    "byName": {
+      "static/runtime/webpack.js": 0,
+      "commons": 1,
+      "static/runtime/main.js": 2,
+      "static/runtime/polyfills.js": 3,
+      "static\\pc5ZvFNvauB1dOW275lbH\\pages\\_app.js": 4,
+      "static\\pc5ZvFNvauB1dOW275lbH\\pages\\_error.js": 5,
+      "static\\pc5ZvFNvauB1dOW275lbH\\pages\\index.js": 6,
+      "static\\pc5ZvFNvauB1dOW275lbH\\pages\\login.js": 7,
+      "static\\pc5ZvFNvauB1dOW275lbH\\pages\\register.js": 8
+    },
+    "bySource": {},
+    "usedIds": [
+      0,
+      1,
+      2,
+      3,
+      4,
+      5,
+      6,
+      7,
+      8
+    ]
+  }
+}
