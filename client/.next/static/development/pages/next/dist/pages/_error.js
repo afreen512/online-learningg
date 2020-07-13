@@ -3121,10 +3121,10 @@ for (var i = 0; i < DOMIterables.length; i++) {
 
 /***/ }),
 
-/***/ "./node_modules/next/dist/build/webpack/loaders/next-client-pages-loader.js?page=%2Fnext%2Fdist%2Fpages%2F_error&absolutePagePath=E%3A%5CANA-website%5Cclient%5Cnode_modules%5Cnext%5Cdist%5Cpages%5C_error.js!./":
-/*!*********************************************************************************************************************************************************************************************************************!*\
-  !*** ./node_modules/next/dist/build/webpack/loaders/next-client-pages-loader.js?page=%2Fnext%2Fdist%2Fpages%2F_error&absolutePagePath=E%3A%5CANA-website%5Cclient%5Cnode_modules%5Cnext%5Cdist%5Cpages%5C_error.js ***!
-  \*********************************************************************************************************************************************************************************************************************/
+/***/ "./node_modules/next/dist/build/webpack/loaders/next-client-pages-loader.js?page=%2Fnext%2Fdist%2Fpages%2F_error&absolutePagePath=C%3A%5CUsers%5Carijc%5CDesktop%5CAWS%5Conline-learningg%5Cclient%5Cnode_modules%5Cnext%5Cdist%5Cpages%5C_error.js!./":
+/*!**********************************************************************************************************************************************************************************************************************************************************!*\
+  !*** ./node_modules/next/dist/build/webpack/loaders/next-client-pages-loader.js?page=%2Fnext%2Fdist%2Fpages%2F_error&absolutePagePath=C%3A%5CUsers%5Carijc%5CDesktop%5CAWS%5Conline-learningg%5Cclient%5Cnode_modules%5Cnext%5Cdist%5Cpages%5C_error.js ***!
+  \**********************************************************************************************************************************************************************************************************************************************************/
 /*! no static exports found */
 /***/ (function(module, exports, __webpack_require__) {
 
@@ -3676,35 +3676,35 @@ var styles = {
 
 /***/ "./node_modules/react/index.js":
 /*!*******************************************************************************************!*\
-  !*** delegated ./node_modules/react/index.js from dll-reference dll_ef0ff7c60362f24a921f ***!
+  !*** delegated ./node_modules/react/index.js from dll-reference dll_7ff8e5d585f359d44ab5 ***!
   \*******************************************************************************************/
 /*! no static exports found */
 /***/ (function(module, exports, __webpack_require__) {
 
-module.exports = (__webpack_require__(/*! dll-reference dll_ef0ff7c60362f24a921f */ "dll-reference dll_ef0ff7c60362f24a921f"))("./node_modules/react/index.js");
+module.exports = (__webpack_require__(/*! dll-reference dll_7ff8e5d585f359d44ab5 */ "dll-reference dll_7ff8e5d585f359d44ab5"))("./node_modules/react/index.js");
 
 /***/ }),
 
 /***/ 0:
-/*!*************************************************************************************************************************************************************************!*\
-  !*** multi next-client-pages-loader?page=%2Fnext%2Fdist%2Fpages%2F_error&absolutePagePath=E%3A%5CANA-website%5Cclient%5Cnode_modules%5Cnext%5Cdist%5Cpages%5C_error.js ***!
-  \*************************************************************************************************************************************************************************/
+/*!**************************************************************************************************************************************************************************************************************!*\
+  !*** multi next-client-pages-loader?page=%2Fnext%2Fdist%2Fpages%2F_error&absolutePagePath=C%3A%5CUsers%5Carijc%5CDesktop%5CAWS%5Conline-learningg%5Cclient%5Cnode_modules%5Cnext%5Cdist%5Cpages%5C_error.js ***!
+  \**************************************************************************************************************************************************************************************************************/
 /*! no static exports found */
 /***/ (function(module, exports, __webpack_require__) {
 
-module.exports = __webpack_require__(/*! next-client-pages-loader?page=%2Fnext%2Fdist%2Fpages%2F_error&absolutePagePath=E%3A%5CANA-website%5Cclient%5Cnode_modules%5Cnext%5Cdist%5Cpages%5C_error.js! */"./node_modules/next/dist/build/webpack/loaders/next-client-pages-loader.js?page=%2Fnext%2Fdist%2Fpages%2F_error&absolutePagePath=E%3A%5CANA-website%5Cclient%5Cnode_modules%5Cnext%5Cdist%5Cpages%5C_error.js!./");
+module.exports = __webpack_require__(/*! next-client-pages-loader?page=%2Fnext%2Fdist%2Fpages%2F_error&absolutePagePath=C%3A%5CUsers%5Carijc%5CDesktop%5CAWS%5Conline-learningg%5Cclient%5Cnode_modules%5Cnext%5Cdist%5Cpages%5C_error.js! */"./node_modules/next/dist/build/webpack/loaders/next-client-pages-loader.js?page=%2Fnext%2Fdist%2Fpages%2F_error&absolutePagePath=C%3A%5CUsers%5Carijc%5CDesktop%5CAWS%5Conline-learningg%5Cclient%5Cnode_modules%5Cnext%5Cdist%5Cpages%5C_error.js!./");
 
 
 /***/ }),
 
-/***/ "dll-reference dll_ef0ff7c60362f24a921f":
+/***/ "dll-reference dll_7ff8e5d585f359d44ab5":
 /*!*******************************************!*\
-  !*** external "dll_ef0ff7c60362f24a921f" ***!
+  !*** external "dll_7ff8e5d585f359d44ab5" ***!
   \*******************************************/
 /*! no static exports found */
 /***/ (function(module, exports) {
 
-module.exports = dll_ef0ff7c60362f24a921f;
+module.exports = dll_7ff8e5d585f359d44ab5;
 
 /***/ })
 
