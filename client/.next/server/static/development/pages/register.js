@@ -88,7 +88,7 @@ module.exports =
 /******/
 /******/
 /******/ 	// Load entry module and return exports
-/******/ 	return __webpack_require__(__webpack_require__.s = 3);
+/******/ 	return __webpack_require__(__webpack_require__.s = 5);
 /******/ })
 /************************************************************************/
 /******/ ({
@@ -110,10 +110,11 @@ __webpack_require__.r(__webpack_exports__);
 /* harmony import */ var next_link__WEBPACK_IMPORTED_MODULE_2___default = /*#__PURE__*/__webpack_require__.n(next_link__WEBPACK_IMPORTED_MODULE_2__);
 /* harmony import */ var next_router__WEBPACK_IMPORTED_MODULE_3__ = __webpack_require__(/*! next/router */ "next/router");
 /* harmony import */ var next_router__WEBPACK_IMPORTED_MODULE_3___default = /*#__PURE__*/__webpack_require__.n(next_router__WEBPACK_IMPORTED_MODULE_3__);
-/* harmony import */ var nprogress__WEBPACK_IMPORTED_MODULE_4__ = __webpack_require__(/*! nprogress */ "nprogress");
-/* harmony import */ var nprogress__WEBPACK_IMPORTED_MODULE_4___default = /*#__PURE__*/__webpack_require__.n(nprogress__WEBPACK_IMPORTED_MODULE_4__);
-/* harmony import */ var nprogress_nprogress_css__WEBPACK_IMPORTED_MODULE_5__ = __webpack_require__(/*! nprogress/nprogress.css */ "./node_modules/nprogress/nprogress.css");
-/* harmony import */ var nprogress_nprogress_css__WEBPACK_IMPORTED_MODULE_5___default = /*#__PURE__*/__webpack_require__.n(nprogress_nprogress_css__WEBPACK_IMPORTED_MODULE_5__);
+/* harmony import */ var _helpers_auth__WEBPACK_IMPORTED_MODULE_4__ = __webpack_require__(/*! ../helpers/auth */ "./helpers/auth.js");
+/* harmony import */ var nprogress__WEBPACK_IMPORTED_MODULE_5__ = __webpack_require__(/*! nprogress */ "nprogress");
+/* harmony import */ var nprogress__WEBPACK_IMPORTED_MODULE_5___default = /*#__PURE__*/__webpack_require__.n(nprogress__WEBPACK_IMPORTED_MODULE_5__);
+/* harmony import */ var nprogress_nprogress_css__WEBPACK_IMPORTED_MODULE_6__ = __webpack_require__(/*! nprogress/nprogress.css */ "./node_modules/nprogress/nprogress.css");
+/* harmony import */ var nprogress_nprogress_css__WEBPACK_IMPORTED_MODULE_6___default = /*#__PURE__*/__webpack_require__.n(nprogress_nprogress_css__WEBPACK_IMPORTED_MODULE_6__);
 var _jsxFileName = "D:\\learn\\online-learningg\\client\\components\\Layout.js";
 
 var __jsx = react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement;
@@ -123,11 +124,12 @@ var __jsx = react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement;
 
 
 
-next_router__WEBPACK_IMPORTED_MODULE_3___default.a.onRouteChangeStart = url => nprogress__WEBPACK_IMPORTED_MODULE_4___default.a.start();
 
-next_router__WEBPACK_IMPORTED_MODULE_3___default.a.onRouteChangeComplete = url => nprogress__WEBPACK_IMPORTED_MODULE_4___default.a.done();
+next_router__WEBPACK_IMPORTED_MODULE_3___default.a.onRouteChangeStart = url => nprogress__WEBPACK_IMPORTED_MODULE_5___default.a.start();
 
-next_router__WEBPACK_IMPORTED_MODULE_3___default.a.onRouteChangeError = url => nprogress__WEBPACK_IMPORTED_MODULE_4___default.a.done();
+next_router__WEBPACK_IMPORTED_MODULE_3___default.a.onRouteChangeComplete = url => nprogress__WEBPACK_IMPORTED_MODULE_5___default.a.done();
+
+next_router__WEBPACK_IMPORTED_MODULE_3___default.a.onRouteChangeError = url => nprogress__WEBPACK_IMPORTED_MODULE_5___default.a.done();
 
 const Layout = ({
   children
@@ -135,7 +137,7 @@ const Layout = ({
   const head = () => __jsx(react__WEBPACK_IMPORTED_MODULE_0___default.a.Fragment, {
     __source: {
       fileName: _jsxFileName,
-      lineNumber: 13
+      lineNumber: 14
     },
     __self: undefined
   }, __jsx("link", {
@@ -145,7 +147,7 @@ const Layout = ({
     crossOrigin: "anonymous",
     __source: {
       fileName: _jsxFileName,
-      lineNumber: 14
+      lineNumber: 15
     },
     __self: undefined
   }), __jsx("link", {
@@ -153,7 +155,7 @@ const Layout = ({
     href: "/static/css/styles.css",
     __source: {
       fileName: _jsxFileName,
-      lineNumber: 20
+      lineNumber: 21
     },
     __self: undefined
   }));
@@ -162,91 +164,306 @@ const Layout = ({
     className: "nav nav-tabs bg-warning",
     __source: {
       fileName: _jsxFileName,
-      lineNumber: 25
+      lineNumber: 26
     },
     __self: undefined
   }, __jsx("li", {
     className: "nav-item",
     __source: {
       fileName: _jsxFileName,
-      lineNumber: 26
+      lineNumber: 27
     },
     __self: undefined
   }, __jsx(next_link__WEBPACK_IMPORTED_MODULE_2___default.a, {
     href: "/",
     __source: {
       fileName: _jsxFileName,
-      lineNumber: 27
+      lineNumber: 28
     },
     __self: undefined
   }, __jsx("a", {
     className: "nav-link text-dark",
     __source: {
       fileName: _jsxFileName,
-      lineNumber: 28
+      lineNumber: 29
     },
     __self: undefined
-  }, "Home"))), __jsx("li", {
+  }, "Home"))), !Object(_helpers_auth__WEBPACK_IMPORTED_MODULE_4__["isAuth"])() && __jsx(react__WEBPACK_IMPORTED_MODULE_0___default.a.Fragment, {
+    __source: {
+      fileName: _jsxFileName,
+      lineNumber: 34
+    },
+    __self: undefined
+  }, __jsx("li", {
     className: "nav-item",
     __source: {
       fileName: _jsxFileName,
-      lineNumber: 31
+      lineNumber: 35
     },
     __self: undefined
   }, __jsx(next_link__WEBPACK_IMPORTED_MODULE_2___default.a, {
     href: "/login",
     __source: {
       fileName: _jsxFileName,
-      lineNumber: 32
+      lineNumber: 36
     },
     __self: undefined
   }, __jsx("a", {
     className: "nav-link text-dark",
     __source: {
       fileName: _jsxFileName,
-      lineNumber: 33
+      lineNumber: 37
     },
     __self: undefined
   }, "Login"))), __jsx("li", {
     className: "nav-item",
     __source: {
       fileName: _jsxFileName,
-      lineNumber: 36
+      lineNumber: 40
     },
     __self: undefined
   }, __jsx(next_link__WEBPACK_IMPORTED_MODULE_2___default.a, {
     href: "/register",
     __source: {
       fileName: _jsxFileName,
-      lineNumber: 37
+      lineNumber: 41
     },
     __self: undefined
   }, __jsx("a", {
     className: "nav-link text-dark",
     __source: {
       fileName: _jsxFileName,
-      lineNumber: 38
+      lineNumber: 42
     },
     __self: undefined
-  }, "Register"))));
+  }, "Register")))), Object(_helpers_auth__WEBPACK_IMPORTED_MODULE_4__["isAuth"])() && Object(_helpers_auth__WEBPACK_IMPORTED_MODULE_4__["isAuth"])().role === 'admin' && __jsx("li", {
+    className: "nav-item ml-auto",
+    __source: {
+      fileName: _jsxFileName,
+      lineNumber: 49
+    },
+    __self: undefined
+  }, __jsx(next_link__WEBPACK_IMPORTED_MODULE_2___default.a, {
+    href: "/admin",
+    __source: {
+      fileName: _jsxFileName,
+      lineNumber: 50
+    },
+    __self: undefined
+  }, __jsx("a", {
+    className: "nav-link text-dark",
+    __source: {
+      fileName: _jsxFileName,
+      lineNumber: 51
+    },
+    __self: undefined
+  }, Object(_helpers_auth__WEBPACK_IMPORTED_MODULE_4__["isAuth"])().name))), Object(_helpers_auth__WEBPACK_IMPORTED_MODULE_4__["isAuth"])() && Object(_helpers_auth__WEBPACK_IMPORTED_MODULE_4__["isAuth"])().role === 'subscriber' && __jsx("li", {
+    className: "nav-item ml-auto",
+    __source: {
+      fileName: _jsxFileName,
+      lineNumber: 57
+    },
+    __self: undefined
+  }, __jsx(next_link__WEBPACK_IMPORTED_MODULE_2___default.a, {
+    href: "/user",
+    __source: {
+      fileName: _jsxFileName,
+      lineNumber: 58
+    },
+    __self: undefined
+  }, __jsx("a", {
+    className: "nav-link text-dark",
+    __source: {
+      fileName: _jsxFileName,
+      lineNumber: 59
+    },
+    __self: undefined
+  }, Object(_helpers_auth__WEBPACK_IMPORTED_MODULE_4__["isAuth"])().name))), Object(_helpers_auth__WEBPACK_IMPORTED_MODULE_4__["isAuth"])() && __jsx("li", {
+    className: "nav-item",
+    __source: {
+      fileName: _jsxFileName,
+      lineNumber: 65
+    },
+    __self: undefined
+  }, __jsx("a", {
+    onClick: _helpers_auth__WEBPACK_IMPORTED_MODULE_4__["logout"],
+    className: "nav-link text-dark",
+    __source: {
+      fileName: _jsxFileName,
+      lineNumber: 66
+    },
+    __self: undefined
+  }, "Logout")));
 
   return __jsx(react__WEBPACK_IMPORTED_MODULE_0___default.a.Fragment, {
     __source: {
       fileName: _jsxFileName,
-      lineNumber: 45
+      lineNumber: 75
     },
     __self: undefined
   }, head(), " ", nav(), " ", __jsx("div", {
     className: "container pt-5 pb-5",
     __source: {
       fileName: _jsxFileName,
-      lineNumber: 46
+      lineNumber: 76
     },
     __self: undefined
   }, children));
 };
 
 /* harmony default export */ __webpack_exports__["default"] = (Layout);
+
+/***/ }),
+
+/***/ "./config.js":
+/*!*******************!*\
+  !*** ./config.js ***!
+  \*******************/
+/*! exports provided: API, APP_NAME, DOMAIN, PRODUCTION, FB_APP_ID */
+/***/ (function(module, __webpack_exports__, __webpack_require__) {
+
+"use strict";
+__webpack_require__.r(__webpack_exports__);
+/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "API", function() { return API; });
+/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "APP_NAME", function() { return APP_NAME; });
+/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "DOMAIN", function() { return DOMAIN; });
+/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "PRODUCTION", function() { return PRODUCTION; });
+/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "FB_APP_ID", function() { return FB_APP_ID; });
+/* harmony import */ var next_config__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! next/config */ "next/config");
+/* harmony import */ var next_config__WEBPACK_IMPORTED_MODULE_0___default = /*#__PURE__*/__webpack_require__.n(next_config__WEBPACK_IMPORTED_MODULE_0__);
+
+const {
+  publicRuntimeConfig
+} = next_config__WEBPACK_IMPORTED_MODULE_0___default()();
+const API = publicRuntimeConfig.API;
+const APP_NAME = publicRuntimeConfig.APP_NAME;
+const DOMAIN = publicRuntimeConfig.DOMAIN;
+const PRODUCTION = publicRuntimeConfig.PRODUCTION;
+const FB_APP_ID = publicRuntimeConfig.FB_APP_ID;
+
+/***/ }),
+
+/***/ "./helpers/alerts.js":
+/*!***************************!*\
+  !*** ./helpers/alerts.js ***!
+  \***************************/
+/*! exports provided: showSuccessMessage, showErrorMessage */
+/***/ (function(module, __webpack_exports__, __webpack_require__) {
+
+"use strict";
+__webpack_require__.r(__webpack_exports__);
+/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "showSuccessMessage", function() { return showSuccessMessage; });
+/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "showErrorMessage", function() { return showErrorMessage; });
+/* harmony import */ var react__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! react */ "react");
+/* harmony import */ var react__WEBPACK_IMPORTED_MODULE_0___default = /*#__PURE__*/__webpack_require__.n(react__WEBPACK_IMPORTED_MODULE_0__);
+var _jsxFileName = "D:\\learn\\online-learningg\\client\\helpers\\alerts.js";
+
+var __jsx = react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement;
+const showSuccessMessage = success => __jsx("div", {
+  className: "alert alert-success",
+  __source: {
+    fileName: _jsxFileName,
+    lineNumber: 1
+  },
+  __self: undefined
+}, success);
+const showErrorMessage = error => __jsx("div", {
+  className: "alert alert-danger",
+  __source: {
+    fileName: _jsxFileName,
+    lineNumber: 2
+  },
+  __self: undefined
+}, error);
+
+/***/ }),
+
+/***/ "./helpers/auth.js":
+/*!*************************!*\
+  !*** ./helpers/auth.js ***!
+  \*************************/
+/*! exports provided: setCookie, removeCookie, getCookie, getCookieFromBrowser, getCookieFromServer, setLocalStorage, removeLocalStorage, authenticate, isAuth, logout */
+/***/ (function(module, __webpack_exports__, __webpack_require__) {
+
+"use strict";
+__webpack_require__.r(__webpack_exports__);
+/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "setCookie", function() { return setCookie; });
+/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "removeCookie", function() { return removeCookie; });
+/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "getCookie", function() { return getCookie; });
+/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "getCookieFromBrowser", function() { return getCookieFromBrowser; });
+/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "getCookieFromServer", function() { return getCookieFromServer; });
+/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "setLocalStorage", function() { return setLocalStorage; });
+/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "removeLocalStorage", function() { return removeLocalStorage; });
+/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "authenticate", function() { return authenticate; });
+/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "isAuth", function() { return isAuth; });
+/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "logout", function() { return logout; });
+/* harmony import */ var _babel_runtime_corejs2_core_js_json_stringify__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! @babel/runtime-corejs2/core-js/json/stringify */ "./node_modules/@babel/runtime-corejs2/core-js/json/stringify.js");
+/* harmony import */ var _babel_runtime_corejs2_core_js_json_stringify__WEBPACK_IMPORTED_MODULE_0___default = /*#__PURE__*/__webpack_require__.n(_babel_runtime_corejs2_core_js_json_stringify__WEBPACK_IMPORTED_MODULE_0__);
+/* harmony import */ var js_cookie__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! js-cookie */ "js-cookie");
+/* harmony import */ var js_cookie__WEBPACK_IMPORTED_MODULE_1___default = /*#__PURE__*/__webpack_require__.n(js_cookie__WEBPACK_IMPORTED_MODULE_1__);
+/* harmony import */ var next_router__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(/*! next/router */ "next/router");
+/* harmony import */ var next_router__WEBPACK_IMPORTED_MODULE_2___default = /*#__PURE__*/__webpack_require__.n(next_router__WEBPACK_IMPORTED_MODULE_2__);
+
+
+ // set in cookie
+
+const setCookie = (key, value) => {
+  if (false) {}
+}; // remove from cookie
+
+const removeCookie = key => {
+  if (false) {}
+}; // get from cookie such as stored token
+// will be useful when we need to make request to server with auth token
+
+const getCookie = (key, req) => {
+  // if (process.browser) {
+  //     return cookie.get(key);
+  // }
+  return false ? undefined : getCookieFromServer(key, req);
+};
+const getCookieFromBrowser = key => {
+  return js_cookie__WEBPACK_IMPORTED_MODULE_1___default.a.get(key);
+};
+const getCookieFromServer = (key, req) => {
+  if (!req.headers.cookie) {
+    return undefined;
+  }
+
+  console.log('req.headers.cookie', req.headers.cookie);
+  let token = req.headers.cookie.split(';').find(c => c.trim().startsWith(`${key}=`));
+
+  if (!token) {
+    return undefined;
+  }
+
+  let tokenValue = token.split('=')[1];
+  console.log('getCookieFromServer', tokenValue);
+  return tokenValue;
+}; // set in localstoarge
+
+const setLocalStorage = (key, value) => {
+  if (false) {}
+}; // remove from localstorage
+
+const removeLocalStorage = key => {
+  if (false) {}
+}; // authenticate user by passing data to cookie and localstorage during signin
+
+const authenticate = (response, next) => {
+  setCookie('token', response.data.token);
+  setLocalStorage('user', response.data.user);
+  next();
+}; // access user info from localstorage
+
+const isAuth = () => {
+  if (false) {}
+};
+const logout = () => {
+  removeCookie('token');
+  removeLocalStorage('user');
+  next_router__WEBPACK_IMPORTED_MODULE_2___default.a.push('/login');
+};
 
 /***/ }),
 
@@ -2177,15 +2394,17 @@ __webpack_require__.r(__webpack_exports__);
 /* harmony import */ var _babel_runtime_corejs2_core_js_object_get_own_property_symbols__WEBPACK_IMPORTED_MODULE_4___default = /*#__PURE__*/__webpack_require__.n(_babel_runtime_corejs2_core_js_object_get_own_property_symbols__WEBPACK_IMPORTED_MODULE_4__);
 /* harmony import */ var _babel_runtime_corejs2_core_js_object_keys__WEBPACK_IMPORTED_MODULE_5__ = __webpack_require__(/*! @babel/runtime-corejs2/core-js/object/keys */ "./node_modules/@babel/runtime-corejs2/core-js/object/keys.js");
 /* harmony import */ var _babel_runtime_corejs2_core_js_object_keys__WEBPACK_IMPORTED_MODULE_5___default = /*#__PURE__*/__webpack_require__.n(_babel_runtime_corejs2_core_js_object_keys__WEBPACK_IMPORTED_MODULE_5__);
-/* harmony import */ var _babel_runtime_corejs2_core_js_json_stringify__WEBPACK_IMPORTED_MODULE_6__ = __webpack_require__(/*! @babel/runtime-corejs2/core-js/json/stringify */ "./node_modules/@babel/runtime-corejs2/core-js/json/stringify.js");
-/* harmony import */ var _babel_runtime_corejs2_core_js_json_stringify__WEBPACK_IMPORTED_MODULE_6___default = /*#__PURE__*/__webpack_require__.n(_babel_runtime_corejs2_core_js_json_stringify__WEBPACK_IMPORTED_MODULE_6__);
-/* harmony import */ var _babel_runtime_corejs2_helpers_esm_defineProperty__WEBPACK_IMPORTED_MODULE_7__ = __webpack_require__(/*! @babel/runtime-corejs2/helpers/esm/defineProperty */ "./node_modules/@babel/runtime-corejs2/helpers/esm/defineProperty.js");
-/* harmony import */ var react__WEBPACK_IMPORTED_MODULE_8__ = __webpack_require__(/*! react */ "react");
-/* harmony import */ var react__WEBPACK_IMPORTED_MODULE_8___default = /*#__PURE__*/__webpack_require__.n(react__WEBPACK_IMPORTED_MODULE_8__);
-/* harmony import */ var _components_Layout__WEBPACK_IMPORTED_MODULE_9__ = __webpack_require__(/*! ../components/Layout */ "./components/Layout.js");
+/* harmony import */ var _babel_runtime_corejs2_helpers_esm_defineProperty__WEBPACK_IMPORTED_MODULE_6__ = __webpack_require__(/*! @babel/runtime-corejs2/helpers/esm/defineProperty */ "./node_modules/@babel/runtime-corejs2/helpers/esm/defineProperty.js");
+/* harmony import */ var react__WEBPACK_IMPORTED_MODULE_7__ = __webpack_require__(/*! react */ "react");
+/* harmony import */ var react__WEBPACK_IMPORTED_MODULE_7___default = /*#__PURE__*/__webpack_require__.n(react__WEBPACK_IMPORTED_MODULE_7__);
+/* harmony import */ var _components_Layout__WEBPACK_IMPORTED_MODULE_8__ = __webpack_require__(/*! ../components/Layout */ "./components/Layout.js");
+/* harmony import */ var next_router__WEBPACK_IMPORTED_MODULE_9__ = __webpack_require__(/*! next/router */ "next/router");
+/* harmony import */ var next_router__WEBPACK_IMPORTED_MODULE_9___default = /*#__PURE__*/__webpack_require__.n(next_router__WEBPACK_IMPORTED_MODULE_9__);
 /* harmony import */ var axios__WEBPACK_IMPORTED_MODULE_10__ = __webpack_require__(/*! axios */ "axios");
 /* harmony import */ var axios__WEBPACK_IMPORTED_MODULE_10___default = /*#__PURE__*/__webpack_require__.n(axios__WEBPACK_IMPORTED_MODULE_10__);
-
+/* harmony import */ var _helpers_alerts__WEBPACK_IMPORTED_MODULE_11__ = __webpack_require__(/*! ../helpers/alerts */ "./helpers/alerts.js");
+/* harmony import */ var _config__WEBPACK_IMPORTED_MODULE_12__ = __webpack_require__(/*! ../config */ "./config.js");
+/* harmony import */ var _helpers_auth__WEBPACK_IMPORTED_MODULE_13__ = __webpack_require__(/*! ../helpers/auth */ "./helpers/auth.js");
 
 
 
@@ -2195,11 +2414,15 @@ __webpack_require__.r(__webpack_exports__);
 
 var _jsxFileName = "D:\\learn\\online-learningg\\client\\pages\\register.js";
 
-var __jsx = react__WEBPACK_IMPORTED_MODULE_8___default.a.createElement;
+var __jsx = react__WEBPACK_IMPORTED_MODULE_7___default.a.createElement;
 
 function ownKeys(object, enumerableOnly) { var keys = _babel_runtime_corejs2_core_js_object_keys__WEBPACK_IMPORTED_MODULE_5___default()(object); if (_babel_runtime_corejs2_core_js_object_get_own_property_symbols__WEBPACK_IMPORTED_MODULE_4___default.a) { var symbols = _babel_runtime_corejs2_core_js_object_get_own_property_symbols__WEBPACK_IMPORTED_MODULE_4___default()(object); if (enumerableOnly) symbols = symbols.filter(function (sym) { return _babel_runtime_corejs2_core_js_object_get_own_property_descriptor__WEBPACK_IMPORTED_MODULE_3___default()(object, sym).enumerable; }); keys.push.apply(keys, symbols); } return keys; }
 
-function _objectSpread(target) { for (var i = 1; i < arguments.length; i++) { var source = arguments[i] != null ? arguments[i] : {}; if (i % 2) { ownKeys(Object(source), true).forEach(function (key) { Object(_babel_runtime_corejs2_helpers_esm_defineProperty__WEBPACK_IMPORTED_MODULE_7__["default"])(target, key, source[key]); }); } else if (_babel_runtime_corejs2_core_js_object_get_own_property_descriptors__WEBPACK_IMPORTED_MODULE_2___default.a) { _babel_runtime_corejs2_core_js_object_define_properties__WEBPACK_IMPORTED_MODULE_1___default()(target, _babel_runtime_corejs2_core_js_object_get_own_property_descriptors__WEBPACK_IMPORTED_MODULE_2___default()(source)); } else { ownKeys(Object(source)).forEach(function (key) { _babel_runtime_corejs2_core_js_object_define_property__WEBPACK_IMPORTED_MODULE_0___default()(target, key, _babel_runtime_corejs2_core_js_object_get_own_property_descriptor__WEBPACK_IMPORTED_MODULE_3___default()(source, key)); }); } } return target; }
+function _objectSpread(target) { for (var i = 1; i < arguments.length; i++) { var source = arguments[i] != null ? arguments[i] : {}; if (i % 2) { ownKeys(Object(source), true).forEach(function (key) { Object(_babel_runtime_corejs2_helpers_esm_defineProperty__WEBPACK_IMPORTED_MODULE_6__["default"])(target, key, source[key]); }); } else if (_babel_runtime_corejs2_core_js_object_get_own_property_descriptors__WEBPACK_IMPORTED_MODULE_2___default.a) { _babel_runtime_corejs2_core_js_object_define_properties__WEBPACK_IMPORTED_MODULE_1___default()(target, _babel_runtime_corejs2_core_js_object_get_own_property_descriptors__WEBPACK_IMPORTED_MODULE_2___default()(source)); } else { ownKeys(Object(source)).forEach(function (key) { _babel_runtime_corejs2_core_js_object_define_property__WEBPACK_IMPORTED_MODULE_0___default()(target, key, _babel_runtime_corejs2_core_js_object_get_own_property_descriptor__WEBPACK_IMPORTED_MODULE_3___default()(source, key)); }); } } return target; }
+
+
+
+
 
 
 
@@ -2209,10 +2432,10 @@ const Register = () => {
   const {
     0: state,
     1: setState
-  } = Object(react__WEBPACK_IMPORTED_MODULE_8__["useState"])({
-    name: '',
-    email: '',
-    password: '',
+  } = Object(react__WEBPACK_IMPORTED_MODULE_7__["useState"])({
+    name: 'Ryan',
+    email: 'ryan@gmail.com',
+    password: 'rrrrrr',
     error: '',
     success: '',
     buttonText: 'Register'
@@ -2225,6 +2448,9 @@ const Register = () => {
     success,
     buttonText
   } = state;
+  Object(react__WEBPACK_IMPORTED_MODULE_7__["useEffect"])(() => {
+    Object(_helpers_auth__WEBPACK_IMPORTED_MODULE_13__["isAuth"])() && next_router__WEBPACK_IMPORTED_MODULE_9___default.a.push('/');
+  }, []);
 
   const handleChange = name => e => {
     setState(_objectSpread({}, state, {
@@ -2235,28 +2461,73 @@ const Register = () => {
     }));
   };
 
-  const handleSubmit = e => {
-    e.preventDefault(); // console.table({ name, email, password });
+  const handleSubmit = async e => {
+    e.preventDefault();
+    setState(_objectSpread({}, state, {
+      buttonText: 'Registering'
+    }));
 
-    axios__WEBPACK_IMPORTED_MODULE_10___default.a.post(`http://localhost:8000/api/register`, {
-      name,
-      email,
-      password
-    }).then(response => console.log(response)).catch(error => console.log(error));
-  };
+    try {
+      const response = await axios__WEBPACK_IMPORTED_MODULE_10___default.a.post(`${_config__WEBPACK_IMPORTED_MODULE_12__["API"]}/register`, {
+        name,
+        email,
+        password
+      });
+      console.log(response);
+      setState(_objectSpread({}, state, {
+        name: '',
+        email: '',
+        password: '',
+        buttonText: 'Submitted',
+        success: response.data.message
+      }));
+    } catch (error) {
+      console.log(error);
+      setState(_objectSpread({}, state, {
+        buttonText: 'Register',
+        error: error.response.data.error
+      }));
+    }
+  }; // const handleSubmit = e => {
+  //     e.preventDefault();
+  //     setState({ ...state, buttonText: 'Registering' });
+  //     // console.table({ name, email, password });
+  //     axios
+  //         .post(`http://localhost:8000/api/register`, {
+  //             name,
+  //             email,
+  //             password
+  //         })
+  //         .then(response => {
+  //             console.log(response);
+  //             setState({
+  //                 ...state,
+  //                 name: '',
+  //                 email: '',
+  //                 password: '',
+  //                 buttonText: 'Submitted',
+  //                 success: response.data.message
+  //             });
+  //         })
+  //         .catch(error => {
+  //             console.log(error);
+  //             setState({ ...state, buttonText: 'Register', error: error.response.data.error });
+  //         });
+  // };
+
 
   const registerForm = () => __jsx("form", {
     onSubmit: handleSubmit,
     __source: {
       fileName: _jsxFileName,
-      lineNumber: 35
+      lineNumber: 81
     },
     __self: undefined
   }, __jsx("div", {
     className: "form-group",
     __source: {
       fileName: _jsxFileName,
-      lineNumber: 36
+      lineNumber: 82
     },
     __self: undefined
   }, __jsx("input", {
@@ -2265,16 +2536,17 @@ const Register = () => {
     type: "text",
     className: "form-control",
     placeholder: "Type your name",
+    required: true,
     __source: {
       fileName: _jsxFileName,
-      lineNumber: 37
+      lineNumber: 83
     },
     __self: undefined
   })), __jsx("div", {
     className: "form-group",
     __source: {
       fileName: _jsxFileName,
-      lineNumber: 45
+      lineNumber: 92
     },
     __self: undefined
   }, __jsx("input", {
@@ -2283,16 +2555,17 @@ const Register = () => {
     type: "email",
     className: "form-control",
     placeholder: "Type your email",
+    required: true,
     __source: {
       fileName: _jsxFileName,
-      lineNumber: 46
+      lineNumber: 93
     },
     __self: undefined
   })), __jsx("div", {
     className: "form-group",
     __source: {
       fileName: _jsxFileName,
-      lineNumber: 54
+      lineNumber: 102
     },
     __self: undefined
   }, __jsx("input", {
@@ -2301,66 +2574,61 @@ const Register = () => {
     type: "password",
     className: "form-control",
     placeholder: "Type your password",
+    required: true,
     __source: {
       fileName: _jsxFileName,
-      lineNumber: 55
+      lineNumber: 103
     },
     __self: undefined
   })), __jsx("div", {
     className: "form-group",
     __source: {
       fileName: _jsxFileName,
-      lineNumber: 63
+      lineNumber: 112
     },
     __self: undefined
   }, __jsx("button", {
     className: "btn btn-outline-warning",
     __source: {
       fileName: _jsxFileName,
-      lineNumber: 64
+      lineNumber: 113
     },
     __self: undefined
   }, buttonText)));
 
-  return __jsx(_components_Layout__WEBPACK_IMPORTED_MODULE_9__["default"], {
+  return __jsx(_components_Layout__WEBPACK_IMPORTED_MODULE_8__["default"], {
     __source: {
       fileName: _jsxFileName,
-      lineNumber: 70
+      lineNumber: 119
     },
     __self: undefined
   }, __jsx("div", {
     className: "col-md-6 offset-md-3",
     __source: {
       fileName: _jsxFileName,
-      lineNumber: 71
+      lineNumber: 120
     },
     __self: undefined
   }, __jsx("h1", {
     __source: {
       fileName: _jsxFileName,
-      lineNumber: 72
+      lineNumber: 121
     },
     __self: undefined
   }, "Register"), __jsx("br", {
     __source: {
       fileName: _jsxFileName,
-      lineNumber: 73
+      lineNumber: 122
     },
     __self: undefined
-  }), registerForm(), __jsx("hr", {
-    __source: {
-      fileName: _jsxFileName,
-      lineNumber: 75
-    },
-    __self: undefined
-  }), _babel_runtime_corejs2_core_js_json_stringify__WEBPACK_IMPORTED_MODULE_6___default()(state)));
+  }), success && Object(_helpers_alerts__WEBPACK_IMPORTED_MODULE_11__["showSuccessMessage"])(success), error && Object(_helpers_alerts__WEBPACK_IMPORTED_MODULE_11__["showErrorMessage"])(error), registerForm()));
 };
 
 /* harmony default export */ __webpack_exports__["default"] = (Register);
 
 /***/ }),
 
-/***/ 3:
+/***/ 5:
 /*!*********************************!*\
   !*** multi ./pages/register.js ***!
   \*********************************/
@@ -2534,6 +2802,28 @@ module.exports = require("core-js/library/fn/symbol/iterator");
 /***/ (function(module, exports) {
 
 module.exports = require("core-js/library/fn/weak-map");
+
+/***/ }),
+
+/***/ "js-cookie":
+/*!****************************!*\
+  !*** external "js-cookie" ***!
+  \****************************/
+/*! no static exports found */
+/***/ (function(module, exports) {
+
+module.exports = require("js-cookie");
+
+/***/ }),
+
+/***/ "next/config":
+/*!******************************!*\
+  !*** external "next/config" ***!
+  \******************************/
+/*! no static exports found */
+/***/ (function(module, exports) {
+
+module.exports = require("next/config");
 
 /***/ }),
 
