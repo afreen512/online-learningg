@@ -188,76 +188,79 @@ const Layout = ({
       lineNumber: 29
     },
     __self: undefined
-  }, "Home"))), !Object(_helpers_auth__WEBPACK_IMPORTED_MODULE_4__["isAuth"])() && __jsx(react__WEBPACK_IMPORTED_MODULE_0___default.a.Fragment, {
+  }, "Home"))), __jsx("li", {
+    className: "nav-item",
+    __source: {
+      fileName: _jsxFileName,
+      lineNumber: 33
+    },
+    __self: undefined
+  }, __jsx(next_link__WEBPACK_IMPORTED_MODULE_2___default.a, {
+    href: "/user/link/create",
     __source: {
       fileName: _jsxFileName,
       lineNumber: 34
+    },
+    __self: undefined
+  }, __jsx("a", {
+    className: "nav-link text-dark btn btn-success",
+    style: {
+      borderRadius: '0px'
+    },
+    __source: {
+      fileName: _jsxFileName,
+      lineNumber: 35
+    },
+    __self: undefined
+  }, "Submit a link"))), !Object(_helpers_auth__WEBPACK_IMPORTED_MODULE_4__["isAuth"])() && __jsx(react__WEBPACK_IMPORTED_MODULE_0___default.a.Fragment, {
+    __source: {
+      fileName: _jsxFileName,
+      lineNumber: 42
     },
     __self: undefined
   }, __jsx("li", {
     className: "nav-item",
     __source: {
       fileName: _jsxFileName,
-      lineNumber: 35
+      lineNumber: 43
     },
     __self: undefined
   }, __jsx(next_link__WEBPACK_IMPORTED_MODULE_2___default.a, {
     href: "/login",
     __source: {
       fileName: _jsxFileName,
-      lineNumber: 36
+      lineNumber: 44
     },
     __self: undefined
   }, __jsx("a", {
     className: "nav-link text-dark",
     __source: {
       fileName: _jsxFileName,
-      lineNumber: 37
+      lineNumber: 45
     },
     __self: undefined
   }, "Login"))), __jsx("li", {
     className: "nav-item",
     __source: {
       fileName: _jsxFileName,
-      lineNumber: 40
+      lineNumber: 48
     },
     __self: undefined
   }, __jsx(next_link__WEBPACK_IMPORTED_MODULE_2___default.a, {
     href: "/register",
     __source: {
       fileName: _jsxFileName,
-      lineNumber: 41
+      lineNumber: 49
     },
     __self: undefined
   }, __jsx("a", {
     className: "nav-link text-dark",
-    __source: {
-      fileName: _jsxFileName,
-      lineNumber: 42
-    },
-    __self: undefined
-  }, "Register")))), Object(_helpers_auth__WEBPACK_IMPORTED_MODULE_4__["isAuth"])() && Object(_helpers_auth__WEBPACK_IMPORTED_MODULE_4__["isAuth"])().role === 'admin' && __jsx("li", {
-    className: "nav-item ml-auto",
-    __source: {
-      fileName: _jsxFileName,
-      lineNumber: 49
-    },
-    __self: undefined
-  }, __jsx(next_link__WEBPACK_IMPORTED_MODULE_2___default.a, {
-    href: "/admin",
     __source: {
       fileName: _jsxFileName,
       lineNumber: 50
     },
     __self: undefined
-  }, __jsx("a", {
-    className: "nav-link text-dark",
-    __source: {
-      fileName: _jsxFileName,
-      lineNumber: 51
-    },
-    __self: undefined
-  }, Object(_helpers_auth__WEBPACK_IMPORTED_MODULE_4__["isAuth"])().name))), Object(_helpers_auth__WEBPACK_IMPORTED_MODULE_4__["isAuth"])() && Object(_helpers_auth__WEBPACK_IMPORTED_MODULE_4__["isAuth"])().role === 'subscriber' && __jsx("li", {
+  }, "Register")))), Object(_helpers_auth__WEBPACK_IMPORTED_MODULE_4__["isAuth"])() && Object(_helpers_auth__WEBPACK_IMPORTED_MODULE_4__["isAuth"])().role === 'admin' && __jsx("li", {
     className: "nav-item ml-auto",
     __source: {
       fileName: _jsxFileName,
@@ -265,7 +268,7 @@ const Layout = ({
     },
     __self: undefined
   }, __jsx(next_link__WEBPACK_IMPORTED_MODULE_2___default.a, {
-    href: "/user",
+    href: "/admin",
     __source: {
       fileName: _jsxFileName,
       lineNumber: 58
@@ -278,11 +281,32 @@ const Layout = ({
       lineNumber: 59
     },
     __self: undefined
+  }, Object(_helpers_auth__WEBPACK_IMPORTED_MODULE_4__["isAuth"])().name))), Object(_helpers_auth__WEBPACK_IMPORTED_MODULE_4__["isAuth"])() && Object(_helpers_auth__WEBPACK_IMPORTED_MODULE_4__["isAuth"])().role === 'subscriber' && __jsx("li", {
+    className: "nav-item ml-auto",
+    __source: {
+      fileName: _jsxFileName,
+      lineNumber: 65
+    },
+    __self: undefined
+  }, __jsx(next_link__WEBPACK_IMPORTED_MODULE_2___default.a, {
+    href: "/user",
+    __source: {
+      fileName: _jsxFileName,
+      lineNumber: 66
+    },
+    __self: undefined
+  }, __jsx("a", {
+    className: "nav-link text-dark",
+    __source: {
+      fileName: _jsxFileName,
+      lineNumber: 67
+    },
+    __self: undefined
   }, Object(_helpers_auth__WEBPACK_IMPORTED_MODULE_4__["isAuth"])().name))), Object(_helpers_auth__WEBPACK_IMPORTED_MODULE_4__["isAuth"])() && __jsx("li", {
     className: "nav-item",
     __source: {
       fileName: _jsxFileName,
-      lineNumber: 65
+      lineNumber: 73
     },
     __self: undefined
   }, __jsx("a", {
@@ -290,7 +314,7 @@ const Layout = ({
     className: "nav-link text-dark",
     __source: {
       fileName: _jsxFileName,
-      lineNumber: 66
+      lineNumber: 74
     },
     __self: undefined
   }, "Logout")));
@@ -298,14 +322,14 @@ const Layout = ({
   return __jsx(react__WEBPACK_IMPORTED_MODULE_0___default.a.Fragment, {
     __source: {
       fileName: _jsxFileName,
-      lineNumber: 75
+      lineNumber: 83
     },
     __self: undefined
   }, head(), " ", nav(), " ", __jsx("div", {
     className: "container pt-5 pb-5",
     __source: {
       fileName: _jsxFileName,
-      lineNumber: 76
+      lineNumber: 84
     },
     __self: undefined
   }, children));
@@ -347,7 +371,7 @@ const FB_APP_ID = publicRuntimeConfig.FB_APP_ID;
 /*!*************************!*\
   !*** ./helpers/auth.js ***!
   \*************************/
-/*! exports provided: setCookie, removeCookie, getCookie, getCookieFromBrowser, getCookieFromServer, setLocalStorage, removeLocalStorage, authenticate, isAuth, logout */
+/*! exports provided: setCookie, removeCookie, getCookie, getCookieFromBrowser, getCookieFromServer, setLocalStorage, removeLocalStorage, authenticate, isAuth, logout, updateUser */
 /***/ (function(module, __webpack_exports__, __webpack_require__) {
 
 "use strict";
@@ -362,6 +386,7 @@ __webpack_require__.r(__webpack_exports__);
 /* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "authenticate", function() { return authenticate; });
 /* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "isAuth", function() { return isAuth; });
 /* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "logout", function() { return logout; });
+/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "updateUser", function() { return updateUser; });
 /* harmony import */ var _babel_runtime_corejs2_core_js_json_stringify__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! @babel/runtime-corejs2/core-js/json/stringify */ "./node_modules/@babel/runtime-corejs2/core-js/json/stringify.js");
 /* harmony import */ var _babel_runtime_corejs2_core_js_json_stringify__WEBPACK_IMPORTED_MODULE_0___default = /*#__PURE__*/__webpack_require__.n(_babel_runtime_corejs2_core_js_json_stringify__WEBPACK_IMPORTED_MODULE_0__);
 /* harmony import */ var js_cookie__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! js-cookie */ "js-cookie");
@@ -428,6 +453,9 @@ const logout = () => {
   removeCookie('token');
   removeLocalStorage('user');
   next_router__WEBPACK_IMPORTED_MODULE_2___default.a.push('/login');
+};
+const updateUser = (user, next) => {
+  if (false) {}
 };
 
 /***/ }),
@@ -2289,9 +2317,11 @@ __webpack_require__.r(__webpack_exports__);
 /* harmony import */ var _components_Layout__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! ../components/Layout */ "./components/Layout.js");
 /* harmony import */ var axios__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(/*! axios */ "axios");
 /* harmony import */ var axios__WEBPACK_IMPORTED_MODULE_2___default = /*#__PURE__*/__webpack_require__.n(axios__WEBPACK_IMPORTED_MODULE_2__);
-/* harmony import */ var next_link__WEBPACK_IMPORTED_MODULE_3__ = __webpack_require__(/*! next/link */ "./node_modules/next/link.js");
-/* harmony import */ var next_link__WEBPACK_IMPORTED_MODULE_3___default = /*#__PURE__*/__webpack_require__.n(next_link__WEBPACK_IMPORTED_MODULE_3__);
-/* harmony import */ var _config__WEBPACK_IMPORTED_MODULE_4__ = __webpack_require__(/*! ../config */ "./config.js");
+/* harmony import */ var moment__WEBPACK_IMPORTED_MODULE_3__ = __webpack_require__(/*! moment */ "moment");
+/* harmony import */ var moment__WEBPACK_IMPORTED_MODULE_3___default = /*#__PURE__*/__webpack_require__.n(moment__WEBPACK_IMPORTED_MODULE_3__);
+/* harmony import */ var next_link__WEBPACK_IMPORTED_MODULE_4__ = __webpack_require__(/*! next/link */ "./node_modules/next/link.js");
+/* harmony import */ var next_link__WEBPACK_IMPORTED_MODULE_4___default = /*#__PURE__*/__webpack_require__.n(next_link__WEBPACK_IMPORTED_MODULE_4__);
+/* harmony import */ var _config__WEBPACK_IMPORTED_MODULE_5__ = __webpack_require__(/*! ../config */ "./config.js");
 var _jsxFileName = "E:\\ANA-website\\client\\pages\\index.js";
 
 var __jsx = react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement;
@@ -2300,14 +2330,124 @@ var __jsx = react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement;
 
 
 
+
+
 const Home = ({
   categories
 }) => {
-  const listCategories = () => categories.map((c, i) => __jsx(next_link__WEBPACK_IMPORTED_MODULE_3___default.a, {
-    href: "/",
+  const {
+    0: popular,
+    1: setPopular
+  } = Object(react__WEBPACK_IMPORTED_MODULE_0__["useState"])([]);
+  Object(react__WEBPACK_IMPORTED_MODULE_0__["useEffect"])(() => {
+    loadPopular();
+  }, []);
+
+  const loadPopular = async () => {
+    const response = await axios__WEBPACK_IMPORTED_MODULE_2___default.a.get(`${_config__WEBPACK_IMPORTED_MODULE_5__["API"]}/link/popular`); // console.log(response);
+
+    setPopular(response.data);
+  };
+
+  const handleClick = async linkId => {
+    const response = await axios__WEBPACK_IMPORTED_MODULE_2___default.a.put(`${_config__WEBPACK_IMPORTED_MODULE_5__["API"]}/click-count`, {
+      linkId
+    });
+    loadPopular();
+  };
+
+  const listOfLinks = () => popular.map((l, i) => __jsx("div", {
+    key: i,
+    className: "row alert alert-secondary p-2",
     __source: {
       fileName: _jsxFileName,
-      lineNumber: 9
+      lineNumber: 28
+    },
+    __self: undefined
+  }, __jsx("div", {
+    className: "col-md-8",
+    onClick: () => handleClick(l._id),
+    __source: {
+      fileName: _jsxFileName,
+      lineNumber: 29
+    },
+    __self: undefined
+  }, __jsx("a", {
+    href: l.url,
+    target: "_blank",
+    __source: {
+      fileName: _jsxFileName,
+      lineNumber: 30
+    },
+    __self: undefined
+  }, __jsx("h5", {
+    className: "pt-2",
+    __source: {
+      fileName: _jsxFileName,
+      lineNumber: 31
+    },
+    __self: undefined
+  }, l.title), __jsx("h6", {
+    className: "pt-2 text-danger",
+    style: {
+      fontSize: '12px'
+    },
+    __source: {
+      fileName: _jsxFileName,
+      lineNumber: 32
+    },
+    __self: undefined
+  }, l.url))), __jsx("div", {
+    className: "col-md-4 pt-2",
+    __source: {
+      fileName: _jsxFileName,
+      lineNumber: 38
+    },
+    __self: undefined
+  }, __jsx("span", {
+    className: "pull-right",
+    __source: {
+      fileName: _jsxFileName,
+      lineNumber: 39
+    },
+    __self: undefined
+  }, moment__WEBPACK_IMPORTED_MODULE_3___default()(l.createdAt).fromNow(), " by ", l.postedBy.name)), __jsx("div", {
+    className: "col-md-12",
+    __source: {
+      fileName: _jsxFileName,
+      lineNumber: 44
+    },
+    __self: undefined
+  }, __jsx("span", {
+    className: "badge text-dark",
+    __source: {
+      fileName: _jsxFileName,
+      lineNumber: 45
+    },
+    __self: undefined
+  }, l.type, " ", l.medium), l.categories.map((c, i) => __jsx("span", {
+    key: i,
+    className: "badge text-success",
+    __source: {
+      fileName: _jsxFileName,
+      lineNumber: 49
+    },
+    __self: undefined
+  }, c.name)), __jsx("span", {
+    className: "badge text-secondary pull-right",
+    __source: {
+      fileName: _jsxFileName,
+      lineNumber: 53
+    },
+    __self: undefined
+  }, l.clicks, " clicks"))));
+
+  const listCategories = () => categories.map((c, i) => __jsx(next_link__WEBPACK_IMPORTED_MODULE_4___default.a, {
+    key: i,
+    href: `/links/${c.slug}`,
+    __source: {
+      fileName: _jsxFileName,
+      lineNumber: 60
     },
     __self: undefined
   }, __jsx("a", {
@@ -2317,27 +2457,27 @@ const Home = ({
     className: "bg-light p-3 col-md-4",
     __source: {
       fileName: _jsxFileName,
-      lineNumber: 10
+      lineNumber: 61
     },
     __self: undefined
   }, __jsx("div", {
     __source: {
       fileName: _jsxFileName,
-      lineNumber: 11
+      lineNumber: 62
     },
     __self: undefined
   }, __jsx("div", {
     className: "row",
     __source: {
       fileName: _jsxFileName,
-      lineNumber: 12
+      lineNumber: 63
     },
     __self: undefined
   }, __jsx("div", {
     className: "col-md-4",
     __source: {
       fileName: _jsxFileName,
-      lineNumber: 13
+      lineNumber: 64
     },
     __self: undefined
   }, __jsx("img", {
@@ -2350,20 +2490,20 @@ const Home = ({
     className: "pr-3",
     __source: {
       fileName: _jsxFileName,
-      lineNumber: 14
+      lineNumber: 65
     },
     __self: undefined
   })), __jsx("div", {
     className: "col-md-8",
     __source: {
       fileName: _jsxFileName,
-      lineNumber: 21
+      lineNumber: 72
     },
     __self: undefined
   }, __jsx("h3", {
     __source: {
       fileName: _jsxFileName,
-      lineNumber: 22
+      lineNumber: 73
     },
     __self: undefined
   }, c.name)))))));
@@ -2371,48 +2511,69 @@ const Home = ({
   return __jsx(_components_Layout__WEBPACK_IMPORTED_MODULE_1__["default"], {
     __source: {
       fileName: _jsxFileName,
-      lineNumber: 31
+      lineNumber: 82
     },
     __self: undefined
   }, __jsx("div", {
     className: "row",
     __source: {
       fileName: _jsxFileName,
-      lineNumber: 32
+      lineNumber: 83
     },
     __self: undefined
   }, __jsx("div", {
     className: "col-md-12",
     __source: {
       fileName: _jsxFileName,
-      lineNumber: 33
+      lineNumber: 84
     },
     __self: undefined
   }, __jsx("h1", {
     className: "font-weight-bold",
     __source: {
       fileName: _jsxFileName,
-      lineNumber: 34
+      lineNumber: 85
     },
     __self: undefined
   }, "Browse Tutorials/Courses"), __jsx("br", {
     __source: {
       fileName: _jsxFileName,
-      lineNumber: 35
+      lineNumber: 86
     },
     __self: undefined
   }))), __jsx("div", {
     className: "row",
     __source: {
       fileName: _jsxFileName,
-      lineNumber: 39
+      lineNumber: 90
     },
     __self: undefined
-  }, listCategories()));
+  }, listCategories()), __jsx("div", {
+    className: "row pt-5",
+    __source: {
+      fileName: _jsxFileName,
+      lineNumber: 92
+    },
+    __self: undefined
+  }, __jsx("h2", {
+    className: "font-weight-bold pb-3",
+    __source: {
+      fileName: _jsxFileName,
+      lineNumber: 93
+    },
+    __self: undefined
+  }, "Trending ", popular.length), __jsx("div", {
+    className: "col-md-12 overflow-hidden",
+    __source: {
+      fileName: _jsxFileName,
+      lineNumber: 94
+    },
+    __self: undefined
+  }, listOfLinks())));
 };
 
 Home.getInitialProps = async () => {
-  const response = await axios__WEBPACK_IMPORTED_MODULE_2___default.a.get(`${_config__WEBPACK_IMPORTED_MODULE_4__["API"]}/categories`);
+  const response = await axios__WEBPACK_IMPORTED_MODULE_2___default.a.get(`${_config__WEBPACK_IMPORTED_MODULE_5__["API"]}/categories`);
   return {
     categories: response.data
   };
@@ -2574,6 +2735,17 @@ module.exports = require("core-js/library/fn/weak-map");
 /***/ (function(module, exports) {
 
 module.exports = require("js-cookie");
+
+/***/ }),
+
+/***/ "moment":
+/*!*************************!*\
+  !*** external "moment" ***!
+  \*************************/
+/*! no static exports found */
+/***/ (function(module, exports) {
+
+module.exports = require("moment");
 
 /***/ }),
 
