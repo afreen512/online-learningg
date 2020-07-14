@@ -3,17 +3,15 @@
   "version": "1.0.0",
   "description": "",
   "main": "server.js",
-  
-    "scripts": {    "client-install": "npm install --prefix client",
-      "client": "npm start --prefix client",
-    
+  "scripts": {
+    "client-install": "npm install --prefix client",
+    "client": "npm start --prefix client",
     "test": "echo \"Error: no test specified\" && exit 1",
-    "install-client":"cd client && npm install",    
+    "install-client": "cd client && npm install",
     "start": "node server.js",
     "server": "nodemon server.js",
     "dev": "concurrently \"npm run server\" \"npm run client\"",
-    "heroku-postbuild":      "NPM_CONFIG_PRODUCTION=false npm install --prefix client        && npm run build --prefix client"  
-
+    "heroku-postbuild": "NPM_CONFIG_PRODUCTION=false npm install --prefix client        && npm run build --prefix client"
   },
   "keywords": [],
   "author": "",
@@ -29,6 +27,7 @@
     "jsonwebtoken": "^8.5.1",
     "mongoose": "^5.9.22",
     "morgan": "^1.10.0",
-    "nodemon": "^2.0.4"
+    "nodemon": "^2.0.4",
+    "shortid": "^2.2.15"
   }
 }
