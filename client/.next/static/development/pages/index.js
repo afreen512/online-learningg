@@ -289,7 +289,7 @@ var FB_APP_ID = publicRuntimeConfig.FB_APP_ID;
 /*!*************************!*\
   !*** ./helpers/auth.js ***!
   \*************************/
-/*! exports provided: setCookie, removeCookie, getCookie, getCookieFromBrowser, getCookieFromServer, setLocalStorage, removeLocalStorage, authenticate, isAuth, logout */
+/*! exports provided: setCookie, removeCookie, getCookie, getCookieFromBrowser, getCookieFromServer, setLocalStorage, removeLocalStorage, authenticate, isAuth, logout, updateUser */
 /***/ (function(module, __webpack_exports__, __webpack_require__) {
 
 "use strict";
@@ -304,6 +304,7 @@ __webpack_require__.r(__webpack_exports__);
 /* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "authenticate", function() { return authenticate; });
 /* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "isAuth", function() { return isAuth; });
 /* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "logout", function() { return logout; });
+/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "updateUser", function() { return updateUser; });
 /* harmony import */ var _babel_runtime_corejs2_core_js_json_stringify__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! @babel/runtime-corejs2/core-js/json/stringify */ "./node_modules/@babel/runtime-corejs2/core-js/json/stringify.js");
 /* harmony import */ var _babel_runtime_corejs2_core_js_json_stringify__WEBPACK_IMPORTED_MODULE_0___default = /*#__PURE__*/__webpack_require__.n(_babel_runtime_corejs2_core_js_json_stringify__WEBPACK_IMPORTED_MODULE_0__);
 /* harmony import */ var js_cookie__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! js-cookie */ "./node_modules/js-cookie/src/js.cookie.js");
@@ -392,6 +393,16 @@ var logout = function logout() {
   removeCookie('token');
   removeLocalStorage('user');
   next_router__WEBPACK_IMPORTED_MODULE_2___default.a.push('/login');
+};
+var updateUser = function updateUser(user, next) {
+  if (true) {
+    if (localStorage.getItem('user')) {
+      var auth = JSON.parse(localStorage.getItem('user'));
+      auth = user;
+      localStorage.setItem('user', _babel_runtime_corejs2_core_js_json_stringify__WEBPACK_IMPORTED_MODULE_0___default()(auth));
+      next();
+    }
+  }
 };
 
 /***/ }),
@@ -12169,6 +12180,7 @@ var Home = function Home(_ref) {
   var listCategories = function listCategories() {
     return categories.map(function (c, i) {
       return __jsx(next_link__WEBPACK_IMPORTED_MODULE_4___default.a, {
+        key: i,
         href: "/links/".concat(c.slug),
         __source: {
           fileName: _jsxFileName,
@@ -12305,7 +12317,7 @@ Home.getInitialProps = function _callee() {
 
 /***/ }),
 
-/***/ 5:
+/***/ 1:
 /*!****************************************************************************************************************************************************!*\
   !*** multi next-client-pages-loader?page=%2F&absolutePagePath=C%3A%5CUsers%5Carijc%5CDesktop%5CAWS%5Conline-learningg%5Cclient%5Cpages%5Cindex.js ***!
   \****************************************************************************************************************************************************/
@@ -12328,5 +12340,5 @@ module.exports = dll_7ff8e5d585f359d44ab5;
 
 /***/ })
 
-},[[5,"static/runtime/webpack.js","styles"]]]);
+},[[1,"static/runtime/webpack.js","styles"]]]);
 //# sourceMappingURL=index.js.map

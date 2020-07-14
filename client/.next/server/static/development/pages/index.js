@@ -88,7 +88,7 @@ module.exports =
 /******/
 /******/
 /******/ 	// Load entry module and return exports
-/******/ 	return __webpack_require__(__webpack_require__.s = 7);
+/******/ 	return __webpack_require__(__webpack_require__.s = 4);
 /******/ })
 /************************************************************************/
 /******/ ({
@@ -371,7 +371,7 @@ const FB_APP_ID = publicRuntimeConfig.FB_APP_ID;
 /*!*************************!*\
   !*** ./helpers/auth.js ***!
   \*************************/
-/*! exports provided: setCookie, removeCookie, getCookie, getCookieFromBrowser, getCookieFromServer, setLocalStorage, removeLocalStorage, authenticate, isAuth, logout */
+/*! exports provided: setCookie, removeCookie, getCookie, getCookieFromBrowser, getCookieFromServer, setLocalStorage, removeLocalStorage, authenticate, isAuth, logout, updateUser */
 /***/ (function(module, __webpack_exports__, __webpack_require__) {
 
 "use strict";
@@ -386,6 +386,7 @@ __webpack_require__.r(__webpack_exports__);
 /* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "authenticate", function() { return authenticate; });
 /* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "isAuth", function() { return isAuth; });
 /* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "logout", function() { return logout; });
+/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "updateUser", function() { return updateUser; });
 /* harmony import */ var _babel_runtime_corejs2_core_js_json_stringify__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! @babel/runtime-corejs2/core-js/json/stringify */ "./node_modules/@babel/runtime-corejs2/core-js/json/stringify.js");
 /* harmony import */ var _babel_runtime_corejs2_core_js_json_stringify__WEBPACK_IMPORTED_MODULE_0___default = /*#__PURE__*/__webpack_require__.n(_babel_runtime_corejs2_core_js_json_stringify__WEBPACK_IMPORTED_MODULE_0__);
 /* harmony import */ var js_cookie__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! js-cookie */ "js-cookie");
@@ -452,6 +453,9 @@ const logout = () => {
   removeCookie('token');
   removeLocalStorage('user');
   next_router__WEBPACK_IMPORTED_MODULE_2___default.a.push('/login');
+};
+const updateUser = (user, next) => {
+  if (false) {}
 };
 
 /***/ }),
@@ -2328,6 +2332,7 @@ const Home = ({
   categories
 }) => {
   const listCategories = () => categories.map((c, i) => __jsx(next_link__WEBPACK_IMPORTED_MODULE_3___default.a, {
+    key: i,
     href: `/links/${c.slug}`,
     __source: {
       fileName: _jsxFileName,
@@ -2446,7 +2451,7 @@ Home.getInitialProps = async () => {
 
 /***/ }),
 
-/***/ 7:
+/***/ 4:
 /*!******************************!*\
   !*** multi ./pages/index.js ***!
   \******************************/
