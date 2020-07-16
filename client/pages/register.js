@@ -10,7 +10,7 @@ const Register = () => {
     const [state, setState] = useState({
         name: 'afreen',
         email: 'afreenhussain@gmail.com',
-        password: '123',
+        password: '123SD',
         error: '',
         success: '',
         buttonText: 'Register',
