@@ -37,5 +37,5 @@ app.use('/api', userRoutes);
 app.use('/api', categoryRoutes);
 app.use('/api', linkRoutes);
 
-const port = process.env.PORT || 8080;
+const port = process.env.PORT || 5000;
 app.listen(port, () => console.log(`API is running on port ${port}`));
